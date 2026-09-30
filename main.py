@@ -16,7 +16,7 @@ def menu_principal():
         print("\n===== MENÚ =====")
         print("1. Cargar datos")
         print("2. Limpiar datos")
-        print("3. Validar y unir (merge)")
+        print("3. merge)")
         print("4. Análisis del merge")
         print("5. Salir")
 
