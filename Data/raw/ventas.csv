@@ -1,0 +1,56 @@
+id_usuario,nombre_usuario,ciudad_usuario,edad,id_prestamo,monto_prestamo,estado_prestamo,id_producto,nombre_producto,categoria,precio,id_envio,empresa_envio,costo_envio,estado_envio
+1,  andres,Bello ,42,1001,320.15, APROBADO ,201, Laptop Pro ,ELECTRONICA,1130.6,5001, Servientrega ,15.5, EN TRANSITO 
+2,MARTA,medellin,39,1002,145.8,pendiente,202,Mause Gamer,Accesorios,700.5,5002,ENVIA,8.2,entregado
+3,Ana,Bucaramanga,40,1003,480.0,RECHAZADO,203, AUDIFONOS ,Accesorios,1072.07,5003,dhl,35.0,CANCELADO
+4,LUIS,medellin,48,1004,, finalizado ,204,monitor 4k ,Accesorios,,5004, TCC ,12.0, retrasado 
+5,DIEGO,medellin,64,1005,210.5, APROBADO ,205,smartphone v2,ELECTRONICA,1126.96,5005,fedex,28.4, EN TRANSITO 
+6,  andres,Bucaramanga,22,1006,95.0,pendiente,206,monitor 4k ,ELECTRONICA,1182.16,5006, Servientrega ,9.5,entregado
+7,Maria ,Cartagena,41,1007,310.2, APROBADO ,207, AUDIFONOS ,Accesorios,,5007,ENVIA,14.0, EN TRANSITO 
+8,sofia,Bello ,,1008,,RECHAZADO,208,smartphone v2,ELECTRONICA,455.51,5008,dhl,,CANCELADO
+9,sofia,Bogota,26,1009,450.0, finalizado ,209,Silla Ergonomica ,OFICINA,257.65,5009, TCC ,18.5,entregado
+10,Laura,medellin,43,1010,180.9, APROBADO ,210,Teclado Mecanico,computo,695.53,5010,fedex,22.0, retrasado 
+11,PEDRO,Bello ,18,1011,65.0,pendiente,211, Laptop Pro ,OFICINA,1048.97,5011, Servientrega ,7.8, EN TRANSITO 
+12,sofia,Manizales,57,1012,490.0, APROBADO ,212, AUDIFONOS ,computo,657.48,5012,ENVIA,16.2,entregado
+13,PEDRO, CALI ,45,1013,380.4,RECHAZADO,213,Teclado Mecanico,Accesorios,980.23,5013,dhl,31.0,CANCELADO
+14,MARTA,medellin,30,1014,120.0, finalizado ,214,Silla Ergonomica ,computo,181.82,5014, TCC ,11.5,
+15,MARTA,Bello ,59,1015,275.5, APROBADO ,215,Mause Gamer,Accesorios,853.31,5015,fedex,25.0, EN TRANSITO 
+16,  juan  ,Bello ,62,1016,,216, AUDIFONOS ,ELECTRONICA,393.28,5016, Servientrega ,13.8,entregado
+17,sofia,Manizales,33,1017,330.8,pendiente,217,smartphone v2,ELECTRONICA,1070.36,5017,ENVIA,19.0, retrasado 
+18,Ana,medellin,47,1018,85.0, APROBADO ,218,monitor 4k ,OFICINA,1108.97,5018,dhl,38.5, EN TRANSITO 
+19,Maria ,Pereira,28,1019,195.2,RECHAZADO,219, Laptop Pro ,OFICINA,1051.87,5019, TCC ,10.0,CANCELADO
+20,Valentina ,medellin,52,1020,290.0, finalizado ,220,Silla Ergonomica ,Accesorios,355.8,5020,fedex,27.2,entregado
+21,MARTA,Barranquilla,59,1021,110.0, APROBADO ,221, AUDIFONOS ,OFICINA,567.89,5021, Servientrega ,8.5, EN TRANSITO 
+22,  andres,Cartagena,21,1022,160.4,pendiente,222,smartphone v2,Accesorios,324.78,5022,ENVIA,15.0,entregado
+23,LUIS,Cartagena,57,1023,230.0, APROBADO ,223,Laptop Pro ,ELECTRONICA,890.12,5023,dhl,33.0,
+24,Carlos,Pereira,,1024,75.0,RECHAZADO,224,Mause Gamer,computo,45.9,5024, TCC ,12.8,CANCELADO
+25,Laura,Bogota,53,1025,495.0, finalizado ,225,Teclado Mecanico,OFICINA,120.5,5025,fedex,29.5, EN TRANSITO 
+26,PEDRO,Bogota,63,1026,340.2, APROBADO ,226,monitor 4k ,ELECTRONICA,980.0,5026, Servientrega ,14.2,entregado
+27,Carlos,medellin,50,1027,,227, AUDIFONOS ,computo,150.3,5027,ENVIA,17.5, retrasado 
+28,  juan  ,Bello ,33,1028,415.8,pendiente,228,Silla Ergonomica ,OFICINA,310.45,5028,dhl,36.0, EN TRANSITO 
+29,MARTA,Manizales,50,1029,480.0, APROBADO ,229,smartphone v2,ELECTRONICA,850.0,5029, TCC ,9.8,entregado
+30,Carlos,Bogota,48,1030,310.0,RECHAZADO,230,Laptop Pro ,computo,1199.99,5030,fedex,24.0,CANCELADO
+31,Maria ,Bucaramanga,,1031,175.5, finalizado ,231,Mause Gamer,Accesorios,60.25,5031, Servientrega ,11.0, EN TRANSITO 
+32,  juan  ,Barranquilla,51,1032,80.0, APROBADO ,232,Teclado Mecanico,computo,180.0,5032,ENVIA,13.5,entregado
+33,Carlos,Cartagena,27,1033,105.0,pendiente,233,monitor 4k ,ELECTRONICA,750.8,5033,dhl,32.5, retrasado 
+34,LUIS,Manizales,60,1034,430.0, APROBADO ,234, AUDIFONOS ,Accesorios,95.0,5034, TCC ,10.5, EN TRANSITO 
+35,  andres,medellin,21,1035,285.4,RECHAZADO,235,Silla Ergonomica ,OFICINA,420.0,5035,fedex,26.8,entregado
+36,Laura,medellin,35,1036,360.0, finalizado ,236,smartphone v2,ELECTRONICA,610.2,5036, Servientrega ,12.2,
+37,Laura, CALI ,31,1037,90.0, APROBADO ,237,Laptop Pro ,ELECTRONICA,1050.0,5037,ENVIA,18.0, EN TRANSITO 
+38,MARTA,Bello ,,1038,,238,Mause Gamer,computo,55.0,5038,dhl,37.0,entregado
+39,DIEGO,Bello ,57,1039,395.0,pendiente,239,Teclado Mecanico,Accesorios,130.0,5039, TCC ,11.2,CANCELADO
+40,Valentina ,medellin,63,1040,140.0, APROBADO ,240,monitor 4k ,ELECTRONICA,890.4,5040,fedex,23.5, retrasado 
+41,Carlos,Manizales,29,1041,325.0,RECHAZADO,241, AUDIFONOS ,OFICINA,210.0,5041, Servientrega ,8.9, EN TRANSITO 
+42,Valentina ,Barranquilla,54,1042,190.8, finalizado ,242,Silla Ergonomica ,OFICINA,380.5,5042,ENVIA,16.8,entregado
+43,  juan  ,Cartagena,43,1043,485.0, APROBADO ,243,smartphone v2,ELECTRONICA,720.0,5043,dhl,34.0, EN TRANSITO 
+44,LUIS,medellin,60,1044,295.0,pendiente,244,Laptop Pro ,computo,1100.0,5044, TCC ,13.0,CANCELADO
+45,Carlos,Bucaramanga,25,1045,155.2, APROBADO ,245,Mause Gamer,Accesorios,49.99,5045,fedex,28.0,entregado
+46,Maria ,Bucaramanga,30,1046,70.0,RECHAZADO,246,Teclado Mecanico,computo,165.0,5046, Servientrega ,10.2, retrasado 
+47,Ana,Pereira,54,1047,112.0, finalizado ,247,monitor 4k ,ELECTRONICA,920.0,5047,ENVIA,14.8, EN TRANSITO 
+48,Valentina ,Pereira,35,1048,440.0, APROBADO ,248, AUDIFONOS ,Accesorios,115.5,5048,dhl,39.0,
+49,sofia,Bello ,48,1049,,249,Silla Ergonomica ,OFICINA,295.0,5049, TCC ,12.5,entregado
+50,MARTA,Barranquilla,34,1050,305.0,pendiente,250,smartphone v2,ELECTRONICA,580.0,5050,fedex,21.5, EN TRANSITO 
+51,Carlos,Bogota,45,1051,210.0, APROBADO ,251,Laptop Pro ,computo,950.0,5051, Servientrega ,15.0,entregado
+52,LUIS,medellin,38,1052,340.5,pendiente,252,Mause Gamer,Accesorios,52.0,5052,ENVIA,11.2, EN TRANSITO 
+53,Ana,Bucaramanga,29,1053,180.0,RECHAZADO,253,Teclado Mecanico,computo,140.0,5053,dhl,29.0,CANCELADO
+54,Laura,Bello ,51,1054,410.0, finalizado ,254,monitor 4k ,ELECTRONICA,880.0,5054, TCC ,16.5,entregado
+55,PEDRO,CALI,36,1055,290.0, APROBADO ,255, AUDIFONOS ,OFICINA,180.0,5055,fedex,20.0, EN TRANSITO
