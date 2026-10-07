@@ -1,0 +1,51 @@
+id_cliente,nombre_cliente,ciudad,segmento_cliente,correo
+1,Ana Maria Lopez,Medellin,Premium,ana.lopez@gmail.com
+2,Carlos Perez,Bogota,Corporativo,carlos.perez@gmail.com
+3,Laura Gomez,Cali,Regular,laura.gomez@gmail.com
+4,Juan Rodriguez,Barranquilla,Premium,juan.rodriguez@gmail.com
+5,Sofia Martinez,Cartagena,,sofia.martinez@gmail.com
+6,Andres Hernandez,Medellin,Corporativo,andres.hernandez@gmail.com
+7,Valentina Torres,,Premium,valentina.torres@gmail.com
+8,Miguel Sanchez,Cali,Regular,miguel.sanchez@gmail.com
+9,Camila Ramirez,Pereira,Corporativo,camila.ramirez@gmail.com
+10,Daniel Castro,Manizales,Regular,daniel.castro@gmail.com
+11,Mariana Vargas,Medellin,,mariana.vargas@gmail.com
+12,Felipe Moreno,Bogota,Regular,felipe.moreno@gmail.com
+13,Isabella Rojas,,Corporativo,isabella.rojas@gmail.com
+14,Santiago Jimenez,,Premium,santiago.jimenez@gmail.com
+15,Natalia Ortiz,Barranquilla,Regular,natalia.ortiz@gmail.com
+16,Diego Gutierrez,Medellin,Corporativo,diego.gutierrez@gmail.com
+17,Paula Navarro,Bogota,Premium,paula.navarro@gmail.com
+18,Sebastian Molina,Cali,Regular,sebastian.molina@gmail.com
+19,Juliana Restrepo,Pereira,,juliana.restrepo@gmail.com
+20,David Arias,Manizales,Corporativo,david.arias@gmail.com
+21,Andrea Cardenas,Medellin,,andrea.cardenas@gmail.com
+22,Esteban Ruiz,Bogota,Premium,esteban.ruiz@gmail.com
+23,Gabriela Mendoza,Cali,Corporativo,gabriela.mendoza@gmail.com
+24,Nicolas Silva,,Regular,nicolas.silva@gmail.com
+25,Daniela Suarez,Barranquilla,Premium,daniela.suarez@gmail.com
+26,Martin Valencia,Medellin,Regular,martin.valencia@gmail.com
+27,Carolina Mejia,Bogota,Corporativo,carolina.mejia@gmail.com
+28,Alejandro Parra,Cali,,alejandro.parra@gmail.com
+29,Manuela Giraldo,Pereira,Regular,manuela.giraldo@gmail.com
+30,Samuel Correa,,Corporativo,samuel.correa@gmail.com
+31,Laura  Gomez,Cali,Regular,laura.gomez@gmail.com
+32,  Andres Hernandez  , Medellin ,Corporativo,andres.hernandez@gmail.com
+33,MARIA FERNANDA ROJAS,Bogota,PREMIUM,maria.rojas@gmail.com
+34,Juan Rodriguez ,Barranquilla,Premium, juan.rodriguez@gmail.com
+35, Sofia Martinez,  , regular,sofia.martinez@gmail.com
+36,Carlos Perez,Bogota,,carlos.perez@gmail.com
+37,  Valentina Torres,,Premium,valentina.torres@gmail.com
+38,Miguel Sanchez,, REGULAR,miguel.sanchez@gmail.com
+39,Camila Ramirez,Pereira,Corporativo,camila.ramirez@gmail.com
+40,Daniel Castro,Manizales,Regular,daniel.castro@gmail.com
+41,Mariana Vargas,Medellin,Premium,mariana.vargas@gmail.com
+42,Felipe Moreno,,Regular,felipe.moreno@gmail.com
+43,Isabella Rojas,Cali,Corporativo,isabella.rojas@gmail.com
+44,Santiago Jimenez,Cartagena,Premium,santiago.jimenez@gmail.com
+45,Natalia Ortiz,,Regular,natalia.ortiz@gmail.com
+46,Diego Gutierrez,Medellin,Corporativo,diego.gutierrez@gmail.com
+47,Paula Navarro,Bogota,Premium,paula.navarro@gmail.com
+48,Sebastian Molina,Cali,Regular,sebastian.molina@gmail.com
+49,Juliana Restrepo,Pereira,Premium,juliana.restrepo@gmail.com
+50,David Arias,Manizales,Corporativo,david.arias@gmail.com
