@@ -4,7 +4,7 @@ import pandas as pd
 
 def cargar_data():
     """Opción 1: Carga el archivo desde data/raw y retorna el DataFrame."""
-    ruta_archivo = os.path.join("data", "raw", "datos.csv")
+    ruta_archivo = os.path.join("ventas", "raw", "ventas.csv")
 
     if not os.path.exists(ruta_archivo):
         print(f"\n[ERROR] No se encontró el archivo en: {ruta_archivo}")
@@ -59,7 +59,7 @@ def guardar_data(df):
         print("\n[ADVERTENCIA] No hay datos limpios para guardar. Ejecuta la opción 2 primero.")
         return
 
-    ruta_salida = os.path.join("data", "processed")
+    ruta_salida = os.path.join("ventas", "processed")
     os.makedirs(ruta_salida, exist_ok=True)
     archivo_salida = os.path.join(ruta_salida, "datos_limpios.csv")
 
@@ -79,7 +79,7 @@ def menu_principal():
         print("\n" + "=" * 40)
         print("      SISTEMA DE PROCESAMIENTO ETL      ")
         print("=" * 40)
-        print("1. Cargar archivo (data/raw)")
+        print("1. Cargar archivo (ventas/raw)")
         print("2. Limpiar DataFrame")
         print("3. Guardar / Entregar datos")
         print("4. Salir")
