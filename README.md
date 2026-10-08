@@ -33,13 +33,13 @@ Asegúrate de tener instalado Python y las dependencias necesarias (como `pandas
 
 1. Clona el repositorio y cambia a la rama de desarrollo (`dev`):
    
-   ```git checkout dev```
+```git checkout dev```
 
 2. Activa tu entorno virtual (venv):
 
 ```source venv/Scripts/activate```
 
-5. Instala las dependencias necesarias: 
+3. Instala las dependencias necesarias: 
 
 ```pip install -r requirements.txt```
 
