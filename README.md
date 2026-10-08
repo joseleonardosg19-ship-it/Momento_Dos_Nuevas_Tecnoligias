@@ -35,9 +35,13 @@ Asegúrate de tener instalado Python y las dependencias necesarias (como `pandas
    ```bash
    git checkout dev
 
-2. Activa tu entorno virtual (venv): source venv/Scripts/activate
+2. Activa tu entorno virtual (venv):
 
-3. Instala las dependencias necesarias: pip install -r requirements.txt
+```source venv/Scripts/activate
+
+5. Instala las dependencias necesarias: 
+
+```pip install -r requirements.txt
 
 Ejecuta el script principal desde la terminal con el entorno virtual activo: python main.py
 
