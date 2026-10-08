@@ -29,10 +29,10 @@ def validar_y_unir(clientes, ventas):
         print(f"Error al realizar el merge: {e}")
         return None
 
-def analizar_merge(df_merge):
-    """
+""" def analizar_merge(df_merge):
+    
     Realiza un análisis básico del DataFrame resultante del merge.
-    """
+    
     print("\n--- Análisis del Merge ---")
     
     if df_merge is None or df_merge.empty:
@@ -45,4 +45,4 @@ def analizar_merge(df_merge):
     print(df_merge.head())
 
     print("\nInformación estadística básica:")
-    print(df_merge.describe())
+    print(df_merge.describe()) """

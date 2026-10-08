@@ -16,7 +16,7 @@ def menu_principal():
         print("\n===== MENÚ =====")
         print("1. Cargar datos")
         print("2. Limpiar datos")
-        print("3. merge)")
+        print("3. validar y unir")
         print("4. Análisis del merge")
         print("5. Salir")
 
@@ -45,7 +45,10 @@ def menu_principal():
                     df_merge = merge.validar_y_unir(clientes, ventas)
 
             case "4":
-                merge.analizar_merge(df_merge)
+                if df_merge is None:
+                    print("\n[ERROR] PRIMERO debes realizar el merge")
+                else:
+                    analizar.analizar_merge(df_merge)
 
             case "5":
                 print("\nSaliendo del programa...")

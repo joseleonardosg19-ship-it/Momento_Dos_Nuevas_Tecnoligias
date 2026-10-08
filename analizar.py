@@ -1,78 +1,110 @@
-def analizar_data(clientes, ventas):
+def analizar_merge(df_merge):
     """
-    Analiza los DataFrames de clientes y ventas con las columnas reales.
+    Realiza el análisis del DataFrame resultante del merge.
+    Responde las métricas solicitadas en el proyecto.
     """
 
-    if clientes is None or ventas is None:
-        print("\n[ERROR] Primero debes cargar los datos.")
+    if df_merge is None:
+        print("\n[ERROR] Primero debes realizar el merge.")
         return
 
-    print("\n" + "=" * 55)
-    print("                    ANÁLISIS DE DATOS")
-    print("=" * 55)
+    print("\n" + "=" * 60)
+    print("                 ANÁLISIS DEL MERGE")
+    print("=" * 60)
 
-    # ==================================================
-    # ANÁLISIS DE CLIENTES
-    # ==================================================
-    print("\n" + "-" * 55)
-    print("                    CLIENTES")
-    print("-" * 55)
-
-    print(f"Total de clientes: {len(clientes)}")
-
-    if "ciudad" in clientes.columns:
-        print("\nClientes por ciudad:")
-        print(clientes["ciudad"].value_counts())
-
-    if "segmento_cliente" in clientes.columns:
-        print("\nClientes por segmento:")
-        print(clientes["segmento_cliente"].value_counts())
-
-    # ==================================================
-    # ANÁLISIS DE VENTAS / OPERACIONES
-    # ==================================================
-    print("\n" + "-" * 55)
-    print("                    VENTAS")
-    print("-" * 55)
-
-    print(f"Total de registros de ventas: {len(ventas)}")
-
-    # Análisis del monto de préstamo
-    if "monto_prestamo" in ventas.columns:
-        print("\n--- Estadísticas de Monto de Préstamo ---")
-        print(f"Total prestado: ${ventas['monto_prestamo'].sum():,.2f}")
-        print(f"Promedio por préstamo: ${ventas['monto_prestamo'].mean():,.2f}")
-        print(f"Préstamo máximo: ${ventas['monto_prestamo'].max():,.2f}")
-        print(f"Préstamo mínimo: ${ventas['monto_prestamo'].min():,.2f}")
-
-    # Análisis de precios
-    if "precio" in ventas.columns:
-        print("\n--- Estadísticas de Precios ---")
-        print(f"Precio promedio: ${ventas['precio'].mean():,.2f}")
-        print(f"Precio máximo: ${ventas['precio'].max():,.2f}")
-        print(f"Precio mínimo: ${ventas['precio'].min():,.2f}")
-
-    # Distribución por categorías
-    if "categoria" in ventas.columns:
-        print("\nDistribución por categoría de producto:")
-        print(ventas["categoria"].value_counts())
-
-    # Estado de los préstamos
-    if "estado_prestamo" in ventas.columns:
-        print("\nEstado de los préstamos:")
-        print(ventas["estado_prestamo"].value_counts())
-
-    # ==================================================
+    # --------------------------------------------------
     # INFORMACIÓN GENERAL
+    # --------------------------------------------------
+
+    print("\n--- Información general ---")
+    df_merge.info()
+
+    # --------------------------------------------------
+    # ESTADÍSTICAS NUMÉRICAS
+    # --------------------------------------------------
+
+    print("\n--- Estadísticas numéricas ---")
+    print(df_merge.describe())
+
     # ==================================================
-    print("\n" + "-" * 55)
-    print("               INFORMACIÓN GENERAL")
-    print("-" * 55)
+    # 1. ANÁLISIS DE FRECUENCIA
+    # ==================================================
 
-    print("\nColumnas de clientes:")
-    print(list(clientes.columns))
+    print("\n" + "-" * 60)
+    print("1. ANÁLISIS DE FRECUENCIA")
+    print("-" * 60)
 
-    print("\nColumnas de ventas:")
-    print(list(ventas.columns))
+    frecuencia_categoria = df_merge["categoria"].value_counts()
+
+    print("\nRegistros por categoría:")
+    print(frecuencia_categoria)
+
+    categoria_mas_frecuente = frecuencia_categoria.idxmax()
+    cantidad = frecuencia_categoria.max()
+
+    print(
+        f"\nCategoría con mayor cantidad de registros: "
+        f"{categoria_mas_frecuente}"
+    )
+
+    print(f"Cantidad de registros: {cantidad}")
+
+    # ==================================================
+    # 2. ANÁLISIS DE AGREGACIÓN
+    # ==================================================
+
+    print("\n" + "-" * 60)
+    print("2. ANÁLISIS DE AGREGACIÓN")
+    print("-" * 60)
+
+    monto_por_categoria = (
+        df_merge
+        .groupby("categoria")["monto_prestamo"]
+        .sum()
+        .sort_values(ascending=False)
+    )
+
+    print("\nMonto total de préstamos por categoría:")
+    print(monto_por_categoria)
+
+    # ==================================================
+    # 3. ANÁLISIS CON FILTRADO Y CONTEO
+    # ==================================================
+
+    print("\n" + "-" * 60)
+    print("3. ANÁLISIS CON FILTRADO Y CONTEO")
+    print("-" * 60)
+
+    aprobados = df_merge[
+        df_merge["estado_prestamo"]
+        .str.strip()
+        .str.upper() == "APROBADO"
+    ]
+
+    print(f"\nCantidad de préstamos aprobados: {len(aprobados)}")
+
+    # ==================================================
+    # INFORMACIÓN ADICIONAL
+    # ==================================================
+
+    print("\n" + "-" * 60)
+    print("INFORMACIÓN ADICIONAL")
+    print("-" * 60)
+
+    print("\nPréstamos por estado:")
+    print(
+        df_merge["estado_prestamo"]
+        .str.strip()
+        .str.upper()
+        .value_counts()
+    )
+
+    print("\nVentas por ciudad:")
+    print(
+        df_merge
+        .groupby("ciudad")["precio"]
+        .sum()
+        .sort_values(ascending=False)
+    )
 
     print("\nAnálisis finalizado.")

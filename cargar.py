@@ -1,5 +1,6 @@
 import os
 import pandas as pd
+# os trabaja con el archivo; pandas trabaja con los datos que están dentro del archivo.
 
 
 def cargar_data():
