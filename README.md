@@ -32,8 +32,8 @@ Para garantizar la integridad de los datos, el sistema implementa una **cascada 
 Asegúrate de tener instalado Python y las dependencias necesarias (como `pandas`).
 
 1. Clona el repositorio y cambia a la rama de desarrollo (`dev`):
-   ```bash
-   git checkout dev
+   
+   ```git checkout dev```
 
 2. Activa tu entorno virtual (venv):
 
