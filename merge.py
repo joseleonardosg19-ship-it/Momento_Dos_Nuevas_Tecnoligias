@@ -1,8 +1,10 @@
+import os
 import pandas as pd
 
 def validar_y_unir(clientes, ventas):
     """
-    Valida los DataFrames de clientes y ventas, y realiza la unión (merge).
+    Valida los DataFrames de clientes y ventas, realiza la unión (merge)
+    y guarda el resultado en la carpeta data/processed.
     """
     print("\n--- Validando y uniendo datos ---")
     
@@ -24,6 +26,21 @@ def validar_y_unir(clientes, ventas):
             how="inner"
         )
         print("¡Merge realizado con éxito!")
+
+        # --- NUEVO: GUARDAR ARCHIVO EN DATA/PROCESSED ---
+        ruta_carpeta = os.path.join("data", "processed")
+        
+        # Crea la carpeta 'processed' automáticamente si no existe
+        os.makedirs(ruta_carpeta, exist_ok=True)
+        
+        # Define la ruta completa del archivo final
+        ruta_archivo = os.path.join(ruta_carpeta, "clientes_ventas_merged.csv")
+        
+        # Exporta el DataFrame a CSV (index=False para evitar guardar índices numéricos extra)
+        df_merge.to_csv(ruta_archivo, index=False, encoding="utf-8")
+        print(f"¡Archivo procesado guardado con éxito en: {ruta_archivo}!")
+        # -----------------------------------------------
+
         return df_merge
     except Exception as e:
         print(f"Error al realizar el merge: {e}")

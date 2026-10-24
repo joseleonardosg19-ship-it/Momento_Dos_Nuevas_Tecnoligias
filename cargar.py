@@ -26,6 +26,7 @@ def cargar_data():
         print("\n[ÉXITO] Archivos cargados correctamente.")
         print(f"Clientes: {clientes.shape[0]} filas | {clientes.shape[1]} columnas")
         print(f"Ventas:   {ventas.shape[0]} filas | {ventas.shape[1]} columnas")
+            # .shape permite conocer las dimensiones (el tamaño) de un DataFrame o estructura de datos tabular.
 
         return clientes, ventas
 

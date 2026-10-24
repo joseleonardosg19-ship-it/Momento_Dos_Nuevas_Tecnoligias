@@ -22,6 +22,8 @@ def limpiar_data(clientes, ventas):
         include=["object", "string"]
     ).columns
 
+    # .select_dtypes() sirve para filtrar y seleccionar columnas de un DataFrame basándose en su tipo de dato (data type).
+
     for columna in columnas_clientes:
         clientes_limpio[columna] = (
             clientes_limpio[columna]

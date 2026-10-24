@@ -20,7 +20,8 @@ def menu_principal():
         print("4. Análisis del merge")
         print("5. Salir")
 
-        opcion = input("Seleccione una opción: ").strip()
+        opcion = input("Seleccione una opción: ").strip()  
+        # .strip eliminar los espacios en blanco
 
         match opcion:
             case "1":
@@ -33,7 +34,7 @@ def menu_principal():
                 else:
                     clientes, ventas = limpiar.limpiar_data(clientes, ventas)
                     datos_limpios = True  # <--- Indicamos que ya están limpios
-                    print("\n[INFO] ¡Datos limpiados con éxito!")
+                    print("\n ¡Datos limpiados con éxito!")
 
             case "3":
                 # Validamos que estén cargados Y limpios
