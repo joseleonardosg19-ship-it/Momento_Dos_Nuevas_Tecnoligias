@@ -7,7 +7,7 @@ import pandas as pd
 import requests
 
 # URL base de tu backend actual (ajusta los puertos o rutas si es necesario)
-BASE_URL_SPRING = "https://educlic-momento1-jhon-1.onrender.com"
+BASE_URL_SPRING = "https://educlic-momento1-jhon-1.onrender.com/api"
 
 
 def _obtener_datos(recurso: str) -> pd.DataFrame:
