@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import Response
 from graficos import (
     headless_productos_por_categoria,
@@ -8,6 +9,22 @@ from graficos import (
 )
 
 app = FastAPI(title="Motor Analítico - Tienda Creativa")
+
+# 2. Configura los dominios permitidos (puedes poner tu URL de Vercel o "*" para permitir todos)
+origins = [
+    "https://proyecto-integrador-chi-orcin.vercel.app",
+    "https://educlic-momento1-jhon-1.onrender.com/api",
+    "http://localhost:5173",  # Por si necesitas probar tu React localmente
+]
+
+# 3. Agrega el middleware a la aplicación
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Usar ["*"] permite peticiones desde cualquier lugar, ideal para proyectos integradores
+    allow_credentials=True,
+    allow_methods=["*"],  # Permite todos los métodos (GET, POST, etc.)
+    allow_headers=["*"],  # Permite todos los encabezados
+)
 
 # ════════════════════════════════════════════════════════
 # ENDPOINTS HEADLESS → JSON (Para consumir desde el Front)
