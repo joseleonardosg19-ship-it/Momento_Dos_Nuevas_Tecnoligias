@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: educlic-analitica
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn microservicio:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.8
+      # URL del API Spring con /api al final, ej: https://educlic-api.onrender.com/api
+      - key: SPRING_API_URL
+        sync: false

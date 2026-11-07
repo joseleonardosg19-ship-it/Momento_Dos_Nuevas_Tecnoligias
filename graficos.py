@@ -4,10 +4,11 @@ matplotlib.use("Agg")  # Servidor sin pantalla (obligatorio)
 import matplotlib.pyplot as plt
 from matplotlib.figure import Figure
 import pandas as pd
+import os
 import requests
 
 # URL base de tu backend actual (ajusta los puertos o rutas si es necesario)
-BASE_URL_SPRING = "https://educlic-momento1-jhon-1.onrender.com/api"
+BASE_URL_SPRING = os.getenv("SPRING_API_URL", "https://educlic-momento1-jhon-1.onrender.com/api").rstrip("/")
 
 
 def _obtener_datos(recurso: str) -> pd.DataFrame:
